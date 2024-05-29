@@ -1,0 +1,24 @@
+Task
+
+You have to print the character, , in the first line. Then print  in next line. In the last line print the sentence, .
+
+code
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int main() 
+{
+   char char_input;
+    char string_input[100];
+    char sentence_input[100];
+    scanf("%c", &char_input);
+    scanf("%s", string_input);
+    getchar();  
+    fgets(sentence_input, sizeof(sentence_input), stdin);
+    printf("%c\n", char_input);
+    printf("%s\n", string_input);
+    printf("%s", sentence_input);
+    return 0;
+}
